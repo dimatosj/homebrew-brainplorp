@@ -4,7 +4,7 @@ class Brainplorp < Formula
   desc "Workflow automation for TaskWarrior + Obsidian with MCP integration"
   homepage "https://github.com/dimatosj/brainplorp"
   url "https://github.com/dimatosj/brainplorp/archive/refs/tags/v1.6.0.tar.gz"
-  sha256 "REPLACE_WITH_ACTUAL_SHA256_ON_RELEASE"
+  sha256 "4fc4802980c9f059c267c62437381d7d2beae941e0a1b231b85ba3c14f1eb54a"
   license "MIT"
   head "https://github.com/dimatosj/brainplorp.git", branch: "master"
 
