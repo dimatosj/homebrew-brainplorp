@@ -2,11 +2,11 @@ class Brainplorp < Formula
   include Language::Python::Virtualenv
 
   desc "Workflow automation for TaskWarrior + Obsidian with MCP integration"
-  homepage "https://github.com/dimatosj/plorp"
-  url "https://github.com/dimatosj/plorp/archive/refs/tags/v1.6.0.tar.gz"
+  homepage "https://github.com/dimatosj/brainplorp"
+  url "https://github.com/dimatosj/brainplorp/archive/refs/tags/v1.6.0.tar.gz"
   sha256 "REPLACE_WITH_ACTUAL_SHA256_ON_RELEASE"
   license "MIT"
-  head "https://github.com/dimatosj/plorp.git", branch: "master"
+  head "https://github.com/dimatosj/brainplorp.git", branch: "master"
 
   depends_on "python@3.11"
   depends_on "task" # TaskWarrior 3.x

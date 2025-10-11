@@ -1,6 +1,6 @@
 # homebrew-brainplorp
 
-Homebrew tap for [brainplorp](https://github.com/dimatosj/plorp) - Workflow automation for TaskWarrior + Obsidian.
+Homebrew tap for [brainplorp](https://github.com/dimatosj/brainplorp) - Workflow automation for TaskWarrior + Obsidian.
 
 ## Installation
 
@@ -17,7 +17,7 @@ After installation, run the setup wizard:
 brainplorp setup
 ```
 
-See the [main repository](https://github.com/dimatosj/plorp) for complete documentation.
+See the [main repository](https://github.com/dimatosj/brainplorp) for complete documentation.
 
 ## What is brainplorp?
 
@@ -39,9 +39,9 @@ brainplorp bridges TaskWarrior (task management) and Obsidian (note-taking) thro
 
 ## Support
 
-- **Issues**: https://github.com/dimatosj/plorp/issues
-- **Documentation**: https://github.com/dimatosj/plorp/tree/master/Docs
+- **Issues**: https://github.com/dimatosj/brainplorp/issues
+- **Documentation**: https://github.com/dimatosj/brainplorp/tree/master/Docs
 
 ## License
 
-MIT License - See [LICENSE](https://github.com/dimatosj/plorp/blob/master/LICENSE)
+MIT License - See [LICENSE](https://github.com/dimatosj/brainplorp/blob/master/LICENSE)
