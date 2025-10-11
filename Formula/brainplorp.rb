@@ -28,7 +28,7 @@ class Brainplorp < Formula
 
   resource "mcp" do
     url "https://files.pythonhosted.org/packages/source/m/mcp/mcp-1.0.0.tar.gz"
-    sha256 "REPLACE_WITH_MCP_SHA256"
+    sha256 "dba51ce0b5c6a80e25576f606760c49a91ee90210fed805b530ca165d3bbc9b7"
   end
 
   resource "html2text" do
