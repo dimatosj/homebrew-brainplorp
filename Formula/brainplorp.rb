@@ -8,7 +8,7 @@ class Brainplorp < Formula
   license "MIT"
   head "https://github.com/dimatosj/brainplorp.git", branch: "master"
 
-  depends_on "python@3.11"
+  depends_on "python@3.12"
   depends_on "task" # TaskWarrior 3.x
 
   resource "click" do
