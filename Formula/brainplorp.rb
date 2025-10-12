@@ -37,10 +37,26 @@ class Brainplorp < Formula
   end
 
   def install
-    # Custom install to avoid --without-pip flag which can hang
-    venv = virtualenv_create(libexec, "python3.12")
-    venv.pip_install resources
-    venv.pip_install_and_link buildpath
+    # Manual venv creation to avoid --without-pip flag which hangs on some systems
+    # We create venv with pip included (default behavior without --without-pip)
+    system Formula["python@3.12"].opt_bin/"python3.12", "-m", "venv", libexec
+
+    # Install dependencies
+    system libexec/"bin/pip", "install", "--upgrade", "pip", "setuptools", "wheel"
+
+    # Install resources (dependencies)
+    resources.each do |r|
+      r.stage do
+        system libexec/"bin/pip", "install", "--no-deps", "--ignore-installed", "."
+      end
+    end
+
+    # Install brainplorp itself
+    system libexec/"bin/pip", "install", "--no-deps", "--ignore-installed", "."
+
+    # Link executables
+    bin.install_symlink libexec/"bin/brainplorp"
+    bin.install_symlink libexec/"bin/brainplorp-mcp"
   end
 
   def post_install
