@@ -37,7 +37,10 @@ class Brainplorp < Formula
   end
 
   def install
-    virtualenv_install_with_resources
+    # Custom install to avoid --without-pip flag which can hang
+    venv = virtualenv_create(libexec, "python3.12")
+    venv.pip_install resources
+    venv.pip_install_and_link buildpath
   end
 
   def post_install
