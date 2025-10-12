@@ -10,11 +10,15 @@ class Brainplorp < Formula
   depends_on "task" # TaskWarrior 3.x
 
   def install
+    # Copy wheel to a proper filename (Homebrew caches with hash prefix)
+    wheel_file = "brainplorp-#{version}-py3-none-any.whl"
+    cp cached_download, wheel_file
+
     # Install wheel with dependencies (pip reads wheel metadata)
     system Formula["python@3.12"].opt_bin/"pip3.12", "install",
            "--target=#{libexec}",
            "--ignore-installed",
-           cached_download
+           wheel_file
 
     # Entry points created at libexec/bin/ by pip
     # Wrap them to set PYTHONPATH
