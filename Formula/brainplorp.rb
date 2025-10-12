@@ -42,7 +42,10 @@ class Brainplorp < Formula
 
   def post_install
     ohai "brainplorp installed successfully!"
-    ohai "Run 'brainplorp setup' to configure your installation"
+    ohai "Next steps:"
+    ohai "  1. Run 'brainplorp setup' to configure your installation"
+    ohai "  2. Run 'brainplorp mcp' to configure Claude Desktop integration"
+    ohai "  3. Restart Claude Desktop to load brainplorp tools"
   end
 
   test do
