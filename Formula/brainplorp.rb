@@ -1,8 +1,8 @@
 class Brainplorp < Formula
   desc "Workflow automation for TaskWarrior + Obsidian with MCP integration"
   homepage "https://github.com/dimatosj/brainplorp"
-  url "https://github.com/dimatosj/brainplorp/releases/download/v1.7.0/brainplorp-1.7.0-py3-none-any.whl"
-  sha256 "fa1bb66a8364aa6f79d9046acea85a8710f632800899986c27d614cf4cca3e9a"
+  url "https://github.com/dimatosj/brainplorp/releases/download/v1.7.1/brainplorp-1.7.1-py3-none-any.whl"
+  sha256 "31d1d3a64297b8d28336eec9a9e249108fcec515fbede6a8f93119f75ecd3a60"
   license "MIT"
   head "https://github.com/dimatosj/brainplorp.git", branch: "master"
 
